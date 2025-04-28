@@ -2,7 +2,7 @@ name: Publish charts
 on:
   push:
     branches:
-      - main
+      - master
 
 jobs:
   publish:
