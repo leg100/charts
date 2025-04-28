@@ -13,7 +13,7 @@ jobs:
       with:
          version: 3.17.0
     - name: helm login
-      run: echo ${{ secrets.GITHUB_TOKEN }} | docker login --username github --password-stdin ghcr.io
+      run: echo ${{ secrets.HELM_TOKEN }} | docker login --username github --password-stdin ghcr.io
     - name: helm package
       run: make package
     - name: helm push
